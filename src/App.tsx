@@ -1,5 +1,6 @@
 import { Box, Grid, GridItem, Show, Stack } from "@chakra-ui/react"
 import { Button } from "./components/ui/button"
+import NavBar from "./components/NavBar"
 
 function App() {
   return ( 
@@ -8,7 +9,9 @@ function App() {
       base: `"nav" "main"`,
       lg: `"nav nav" "aside main"` // devices wider that 1024px
     }}>
-      <GridItem area='nav' bg='coral'>Nav</GridItem>
+      <GridItem area='nav'>
+        <NavBar />
+      </GridItem>
       <Box display={{base: 'none', lg: 'block'}}>
         <GridItem area='aside' bg='gold'>Aside</GridItem>
       </Box>
