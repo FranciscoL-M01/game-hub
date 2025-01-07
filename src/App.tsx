@@ -1,5 +1,4 @@
 import { Box, Grid, GridItem, Show, Stack } from "@chakra-ui/react"
-import { Button } from "./components/ui/button"
 import NavBar from "./components/NavBar"
 
 function App() {
