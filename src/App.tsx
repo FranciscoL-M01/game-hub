@@ -6,10 +6,16 @@ import GenreList from "./components/GenreList"
 function App() {
   return ( 
   <>
-    <Grid templateAreas={{
+    <Grid 
+    templateAreas={{
       base: `"nav" "main"`,
       lg: `"nav nav" "aside main"` // devices wider that 1024px
-    }}>
+    }}
+    templateColumns={{
+      base: '1fr',
+      lg: '200px 1fr'
+    }}
+    >
       <GridItem area='nav'>
         <NavBar />
       </GridItem>
